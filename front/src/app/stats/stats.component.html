@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="box">
+        <ngb-alert type="dark" [dismissible]="false"> 
+            <strong>Mutations:</strong> {{totalAngularPackages.count_mutations}}
+        </ngb-alert>
+    </div>
+    <div class="box">
+        <ngb-alert type="success"  [dismissible]="false">
+            <strong>No mutations:</strong> {{totalAngularPackages.count_no_mutation}}
+        </ngb-alert>
+    </div>
+    <div class="box">
+        <ngb-alert type="primary"  [dismissible]="false">
+            <strong>Ratio:</strong> {{totalAngularPackages.ratio}}
+        </ngb-alert>
+    </div>
+    <div class="clear"></div>
+</div>

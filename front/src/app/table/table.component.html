@@ -1,0 +1,27 @@
+<div class="container"> 
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Ejecutado</th>
+          <th scope="col">ADN</th>
+          <th scope="col">Mutante</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let adn of adns; index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>
+                   {{adn.createdAt | date}}
+                </td>
+                <td>
+                    {{adn.obj.dna}}
+                </td>
+                <td>
+                    {{true == adn.mutation ? 'Si' : 'No' }}
+                </td>
+              </tr>
+          
+        </tbody>
+      </table>
+</div>
