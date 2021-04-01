@@ -14,7 +14,7 @@ export class StatsComponent implements OnInit {
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://localhost:5000/stats').subscribe(data => {
+    this.http.get<any>('http://143.198.116.61:5000/stats').subscribe(data => {
       this.totalAngularPackages = data;
   })
   }

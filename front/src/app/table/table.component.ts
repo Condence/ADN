@@ -12,7 +12,7 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
      // Simple GET request with response type <any>
-    this.http.get<any>('http://localhost:5000/list').subscribe(data => {
+    this.http.get<any>('http://143.198.116.61:5000/list').subscribe(data => {
       this.adns = data;
   })
   }
